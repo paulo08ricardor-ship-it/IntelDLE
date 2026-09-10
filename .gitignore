@@ -1,0 +1,7 @@
+# Arquivos de ambiente e senhas
+.env
+# Bancos de dados locais SQLite
+config/*.sqlite
+*.sqlite
+# Logs e arquivos temporários
+*.log

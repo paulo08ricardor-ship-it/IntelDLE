@@ -1,0 +1,95 @@
+/* Variáveis Globais de Tema - Inteldle */
+:root {
+  /* Fundo */
+  --cor-fundo-corpo: #2b2b2b;
+  --cor-fundo-secundario: #1a1a1a;
+  --cor-fundo-terciario: #3d3d3d;
+  --cor-fundo-modal: #2b2b2b;
+  --cor-fundo-painel: #2b2b2b;
+  --cor-fundo-painel-titulo: rgba(0, 170, 255, 0.2);
+  --cor-fundo-btn-opcao: #1e1e1e;
+  --cor-fundo-overlay: rgba(0, 0, 0, 0.8);
+  --cor-fundo-tooltip: #000;
+  --cor-fundo-erro-bg: rgba(255, 68, 68, 0.1);
+
+  /* Textos */
+  --cor-texto-principal: #00aaff;
+  --cor-texto-destaque: #ffffff;
+  --cor-texto-erro: #ff4444;
+  --cor-texto-sucesso: #00ff00;
+  --cor-texto-hover: #ffffff;
+  --cor-texto-btn-vermelho: #00aaff;
+
+  /* Bordas */
+  --cor-borda-principal: #00aaff;
+  --cor-borda-erro: #ff4444;
+  --cor-borda-sucesso: #00ff00;
+  --cor-borda-score: rgba(0, 170, 255, 0.3);
+  --cor-borda-linha-pecas: rgba(255, 68, 68, 0.3);
+
+  /* Botões Padrão */
+  --cor-btn-bg: transparent;
+  --cor-btn-texto: #00aaff;
+  --cor-btn-borda: #00aaff;
+  --cor-btn-hover-bg: #00aaff;
+  --cor-btn-hover-texto: #2b2b2b;
+  --cor-btn-vermelho-bg: #1a1a1a;
+  --cor-btn-vermelho-borda: #ff4444;
+  --cor-btn-vermelho-hover: rgba(255, 255, 255, 0.1);
+
+  /* Sombras */
+  --cor-sombra-painel: none;
+  --cor-sombra-selecionado: rgba(0, 170, 255, 0.6);
+  --cor-sombra-erro: rgba(255, 68, 68, 0.4);
+  --cor-sombra-sucesso: rgba(0, 255, 0, 0.25);
+}
+
+:root.tema-claro, html.tema-claro, body.tema-claro, .tema-claro {
+  /* Fundo */
+  --cor-fundo-corpo: #f4f6f9;
+  --cor-fundo-secundario: #ffffff;
+  --cor-fundo-terciario: #f8fafc;
+  --cor-fundo-modal: #ffffff;
+  --cor-fundo-painel: #ffffff;
+  --cor-fundo-painel-titulo: rgba(0, 136, 204, 0.12);
+  --cor-fundo-btn-opcao: #f0f4f8;
+  --cor-fundo-overlay: rgba(0, 0, 0, 0.85);
+  --cor-fundo-tooltip: #ffffff;
+  --cor-fundo-erro-bg: rgba(255, 68, 68, 0.1);
+
+  /* Textos */
+  --cor-texto-principal: #006699;
+  --cor-texto-destaque: #333333;
+  --cor-texto-erro: #ff5555;
+  --cor-texto-sucesso: #00aa00;
+  --cor-texto-hover: #005580;
+  --cor-texto-btn-vermelho: #0077b3;
+
+  /* Bordas */
+  --cor-borda-principal: #0088cc;
+  --cor-borda-erro: #ff5555;
+  --cor-borda-sucesso: #00aa00;
+  --cor-borda-score: rgba(0, 136, 204, 0.15);
+  --cor-borda-linha-pecas: rgba(0, 136, 204, 0.4);
+
+  /* Botões Padrão */
+  --cor-btn-bg: #ffffff;
+  --cor-btn-texto: #0088cc;
+  --cor-btn-borda: #0088cc;
+  --cor-btn-hover-bg: #0088cc;
+  --cor-btn-hover-texto: #ffffff;
+  --cor-btn-vermelho-bg: #ffffff;
+  --cor-btn-vermelho-borda: #ff5555;
+  --cor-btn-vermelho-hover: rgba(0, 0, 0, 0.05);
+
+  /* Sombras */
+  --cor-sombra-painel: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --cor-sombra-selecionado: rgba(0, 136, 204, 0.4);
+  --cor-sombra-erro: rgba(0, 0, 0, 0.2);
+  --cor-sombra-sucesso: rgba(0, 255, 0, 0.25);
+}
+
+html, body {
+  background-color: var(--cor-fundo-corpo);
+  color: var(--cor-texto-principal);
+}

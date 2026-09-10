@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créditos - Inteldle</title>
+  
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <script src="../assets/js/tema.js"></script>
+  
+  <style>
+    body {
+      background-color: var(--cor-fundo-corpo);
+      color: var(--cor-texto-principal);
+      font-family: sans-serif;
+      padding: 50px;
+      -webkit-user-select: none; 
+      -ms-user-select: none;     
+      user-select: none;
+    }
+
+    .botao-voltar {
+      background: var(--cor-btn-bg);
+      border: 2px solid var(--cor-borda-principal);
+      color: var(--cor-texto-principal);
+      padding: 10px 25px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s;
+      display: inline-block;
+      margin-bottom: 40px;
+      border-radius: 4px;
+    }
+
+    .botao-voltar:hover {
+      background-color: var(--cor-borda-principal);
+      color: var(--cor-fundo-corpo);
+    }
+
+    .grid-creditos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .perfil-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
+    }
+
+    .bloco-visual {
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .foto-placeholder {
+      width: 100%;
+      height: 200px;
+      border: 3px solid;
+      background-color: var(--cor-fundo-terciario);
+      box-sizing: border-box;
+    }
+
+    .nome-tag {
+      width: 100%;
+      border: 3px solid;
+      border-top: none;
+      padding: 8px 0;
+      text-align: center;
+      font-weight: bold;
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: inherit;
+    }
+
+    html.tema-claro .nome-tag, body.tema-claro .nome-tag {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .funcoes {
+      padding-top: 5px;
+      line-height: 1.5;
+      font-size: 18px;
+    }
+
+    .azul { border-color: #0044ff; color: #0044ff; }
+    .vermelho { border-color: #ff0000; color: #ff0000; }
+    .ciano { border-color: #00ffff; color: #00ffff; }
+    .roxo { border-color: #9900ff; color: #9900ff; }
+    .verde { border-color: #00ff00; color: #00ff00; }
+    .dourado { border-color: #fad91e; color: #fad91e; }
+
+    .texto-info {
+      color: var(--cor-texto-principal);
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="menu.php" class="botao-voltar">← Voltar ao Menu</a>
+
+  <div class="grid-creditos">
+
+    <div class="perfil-item">
+      <div class="bloco-visual">
+        <div class="foto-placeholder azul"></div>
+        <div class="nome-tag azul">Ricardo Yassutaro</div>
+      </div>
+      <div class="funcoes texto-info">
+        Designer Gráfico<br>Design do Jogo<br>Patrocinador<br>Apoio Emocional
+      </div>
+    </div>
+
+    <div class="perfil-item">
+      <div class="bloco-visual">
+        <div class="foto-placeholder vermelho"></div>
+        <div class="nome-tag vermelho">Bernardo Catunda</div>
+      </div>
+      <div class="funcoes texto-info">
+        Design do jogo<br>Programador<br>Rizz + Aura + Ego<br>Apoio Emocional #2
+      </div>
+    </div>
+
+    <div class="perfil-item">
+      <div class="bloco-visual">
+        <div class="foto-placeholder ciano"></div>
+        <div class="nome-tag ciano">Leonardo Belarmindo</div>
+      </div>
+      <div class="funcoes texto-info">
+        Programador<br>Design do Jogo<br>Sempre no Mundo da Lua<br>Apoio Emocional #3
+      </div>
+    </div>
+
+    <div class="perfil-item">
+      <div class="bloco-visual">
+        <div class="foto-placeholder roxo"></div>
+        <div class="nome-tag roxo">Lucas Santana</div>
+      </div>
+      <div class="funcoes texto-info">
+        O desenvolvedor do Banco de Dados 3FN<br>(Obrigado ❤)<br>Apoio Emocional #4
+      </div>
+    </div>
+
+    <div class="perfil-item">
+      <div class="bloco-visual">
+        <div class="foto-placeholder verde"></div>
+        <div class="nome-tag verde">Paulo Ricardo</div>
+      </div>
+      <div class="funcoes texto-info">
+        Nerd de Hardware<br>Programador<br>Jogador de LOL
+      </div>
+    </div>
+
+    <div class="perfil-item">
+      <div class="bloco-visual">
+        <div class="foto-placeholder dourado"></div>
+        <div class="nome-tag dourado">Saulo Silva</div>
+      </div>
+      <div class="funcoes texto-info">
+        Integrações com Banco de Dados & Arquitetura<br>Programador
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

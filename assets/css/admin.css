@@ -1,0 +1,497 @@
+/* --- ESTILOS DO PAINEL ADMINISTRATIVO INTELDLE (TEMA DO MENU) --- */
+body.admin-body {
+  background-color: var(--cor-fundo-corpo);
+  color: var(--cor-texto-principal);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Administrativo */
+.admin-navbar {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--cor-borda-principal);
+  background-color: var(--cor-fundo-secundario);
+}
+
+.admin-logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-logo-texto {
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--cor-texto-principal);
+}
+
+.admin-badge-topo {
+  border: 1px solid var(--cor-borda-principal);
+  background-color: var(--cor-fundo-painel-titulo);
+  color: var(--cor-texto-principal);
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px 12px;
+  text-transform: uppercase;
+}
+
+.admin-user-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-nome-user {
+  font-weight: bold;
+  color: var(--cor-texto-destaque);
+  font-size: 16px;
+}
+
+/* Botões Padrão do Menu */
+.btn-admin-acao {
+  background: var(--cor-btn-bg);
+  border: 2px solid var(--cor-btn-borda);
+  color: var(--cor-btn-texto);
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+  font-family: Arial, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-admin-acao:hover {
+  background-color: var(--cor-btn-hover-bg);
+  color: var(--cor-btn-hover-texto);
+}
+
+.btn-admin-destaque {
+  background-color: var(--cor-borda-principal);
+  color: var(--cor-fundo-corpo);
+}
+
+.btn-admin-destaque:hover {
+  background-color: var(--cor-btn-hover-bg);
+  color: var(--cor-btn-hover-texto);
+  box-shadow: 0 0 10px var(--cor-sombra-selecionado);
+}
+
+.btn-admin-perigo {
+  border-color: var(--cor-borda-erro);
+  color: var(--cor-texto-erro);
+}
+
+.btn-admin-perigo:hover {
+  background-color: var(--cor-borda-erro);
+  color: #ffffff;
+}
+
+/* Menu de Navegação / Abas estilo Inteldle */
+.admin-subnav {
+  background-color: var(--cor-fundo-secundario);
+  border-bottom: 2px solid var(--cor-borda-principal);
+  padding: 0 50px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.admin-nav-tab {
+  padding: 14px 22px;
+  color: var(--cor-texto-principal);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-nav-tab:hover {
+  background-color: var(--cor-fundo-painel-titulo);
+  color: var(--cor-texto-hover);
+}
+
+.admin-nav-tab.active {
+  color: var(--cor-texto-destaque);
+  border-bottom: 3px solid var(--cor-borda-principal);
+  background-color: var(--cor-fundo-painel-titulo);
+}
+
+/* Container Principal */
+.admin-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.admin-header-secao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.admin-titulo-secao {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--cor-texto-principal);
+  margin: 0;
+}
+
+.admin-subtitulo-secao {
+  color: var(--cor-texto-destaque);
+  font-size: 14px;
+  margin-top: 5px;
+  opacity: 0.85;
+}
+
+/* Grid de Métricas / KPIs */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.kpi-card {
+  background-color: var(--cor-fundo-secundario);
+  border: 2px solid var(--cor-borda-principal);
+  box-shadow: var(--cor-sombra-painel);
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px var(--cor-sombra-selecionado);
+}
+
+.kpi-icone {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.kpi-valor {
+  font-size: 34px;
+  font-weight: bold;
+  color: var(--cor-texto-principal);
+  margin-bottom: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.kpi-rotulo {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--cor-texto-destaque);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Cards de Acesso Rápido no Dashboard */
+.grid-atalhos-admin {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card-atalho {
+  background-color: var(--cor-fundo-secundario);
+  border: 2px solid var(--cor-borda-principal);
+  padding: 25px;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-atalho:hover {
+  background-color: var(--cor-btn-hover-bg);
+  color: var(--cor-btn-hover-texto);
+  transform: translateY(-3px);
+}
+
+.card-atalho:hover .card-atalho-titulo,
+.card-atalho:hover .card-atalho-desc,
+.card-atalho:hover .card-atalho-link {
+  color: var(--cor-btn-hover-texto);
+}
+
+.card-atalho-titulo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--cor-texto-principal);
+  margin-bottom: 10px;
+}
+
+.card-atalho-desc {
+  font-size: 14px;
+  color: var(--cor-texto-destaque);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.card-atalho-link {
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--cor-texto-principal);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Tabelas de Dados Administrativos estilo Inteldle */
+.tabela-wrapper {
+  background-color: var(--cor-fundo-secundario);
+  border: 2px solid var(--cor-borda-principal);
+  overflow: hidden;
+  box-shadow: var(--cor-sombra-painel);
+}
+
+.tabela-admin {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tabela-admin th {
+  background-color: var(--cor-fundo-painel-titulo);
+  color: var(--cor-texto-principal);
+  padding: 12px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid var(--cor-borda-principal);
+}
+
+.tabela-admin td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--cor-borda-score);
+  font-size: 14px;
+  color: var(--cor-texto-destaque);
+  vertical-align: middle;
+}
+
+.tabela-admin tr:hover td {
+  background-color: rgba(0, 170, 255, 0.05);
+}
+
+.thumb-tabela {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  background: var(--cor-fundo-terciario);
+  border: 1px solid var(--cor-borda-principal);
+  padding: 2px;
+}
+
+.badge-status {
+  display: inline-block;
+  padding: 3px 8px;
+  border: 1px solid var(--cor-borda-principal);
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.badge-correto {
+  border-color: var(--cor-borda-sucesso);
+  color: var(--cor-texto-sucesso);
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.badge-incorreto {
+  border-color: var(--cor-borda-erro);
+  color: var(--cor-texto-erro);
+  background-color: var(--cor-fundo-erro-bg);
+}
+
+.badge-hardware {
+  border-color: var(--cor-borda-principal);
+  color: var(--cor-texto-principal);
+  background-color: var(--cor-fundo-painel-titulo);
+}
+
+.badge-software {
+  border-color: #9900ff;
+  color: #bb44ff;
+  background-color: rgba(153, 0, 255, 0.1);
+}
+
+.badge-rede {
+  border-color: #00d2ff;
+  color: #00d2ff;
+  background-color: rgba(0, 210, 255, 0.1);
+}
+
+.badge-seguranca {
+  border-color: #ffaa00;
+  color: #ffaa00;
+  background-color: rgba(255, 170, 0, 0.1);
+}
+
+.badge-geral {
+  border-color: #00ff88;
+  color: #00ff88;
+  background-color: rgba(0, 255, 136, 0.1);
+}
+
+.acoes-tabela {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-acao-icone {
+  background: var(--cor-btn-bg);
+  border: 1px solid var(--cor-borda-principal);
+  color: var(--cor-texto-principal);
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-acao-icone:hover {
+  background-color: var(--cor-borda-principal);
+  color: var(--cor-fundo-corpo);
+}
+
+.btn-acao-icone.excluir {
+  border-color: var(--cor-borda-erro);
+  color: var(--cor-texto-erro);
+}
+
+.btn-acao-icone.excluir:hover {
+  background-color: var(--cor-borda-erro);
+  color: #ffffff;
+}
+
+/* Modais de Formulário estilo Inteldle */
+.modal-admin-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--cor-fundo-overlay);
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-admin-content {
+  background: var(--cor-fundo-modal);
+  border: 3px solid var(--cor-borda-principal);
+  color: var(--cor-texto-destaque);
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-admin-titulo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--cor-texto-principal);
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--cor-borda-principal);
+  padding-bottom: 10px;
+}
+
+.form-grupo {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: var(--cor-texto-principal);
+  text-transform: uppercase;
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  padding: 10px;
+  background: var(--cor-fundo-terciario);
+  border: 1px solid var(--cor-borda-principal);
+  color: var(--cor-texto-destaque);
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px var(--cor-sombra-selecionado);
+}
+
+.form-rodape {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+  border-top: 1px solid var(--cor-borda-score);
+  padding-top: 15px;
+}
+
+/* Toast de Notificação */
+#adminToast {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: var(--cor-fundo-secundario);
+  color: var(--cor-texto-destaque);
+  border: 2px solid var(--cor-borda-principal);
+  padding: 12px 22px;
+  font-weight: bold;
+  z-index: 9999;
+  display: none;
+}
+
+#adminToast.sucesso {
+  border-color: var(--cor-borda-sucesso);
+  color: var(--cor-texto-sucesso);
+}
+
+#adminToast.erro {
+  border-color: var(--cor-borda-erro);
+  color: var(--cor-texto-erro);
+}
